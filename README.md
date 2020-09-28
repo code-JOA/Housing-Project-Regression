@@ -1,4 +1,4 @@
-# Housing-Project-Regression
+# California Housing-Project-Regression
 
 
 # Author : Joshua Owusu Ankomah
