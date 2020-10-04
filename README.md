@@ -37,7 +37,6 @@
 ### Note: The dataset has an attribute with missing values and an attribute with categorical values. Find a way of handling these anomalies and justify your choice.
 <!-- #endregion -->
 
-<!-- #region -->
 ### 3. Evaluation
 The evaluation metric for this competetion is the RMSLE (Root Mean Squared Log Error) between the actual data and the predicted house prices as suggested by the competition.
 
@@ -61,7 +60,9 @@ The goal of this project is to reduce/build a machine learning model to minimise
 + Polynomial Regression
 + RandomForestRegresssor
 
-# Regularization:
+
+<!-- #region -->
+## 3.5a Regularization:
 + Regularization is used when the data is overfitting. In our case not.
 
 
@@ -74,7 +75,7 @@ Where, λ is the shrinkage factor.
 
 and hence the formula for loss after regularization is:
 
-<img src="L1.PNG" width="300">
+<!-- <img src="L1.PNG" width="300"> -->
 - `It reduces the size of the coefficients by allowing them to reach zero`
 
 
@@ -88,8 +89,8 @@ Where, λ is the shrinkage factor.
 
 and hence the formula for loss after regularization is:
 
-<img src="ridge.PNG" width="300">
-
+<!-- <img src="ridge.PNG" width="300">
+ -->
 This value of lambda can be anything and should be calculated by cross validation as to what suits the model.
 
 Let’s consider $\beta_1$ and $\beta_2$ be coefficients of a linear regression and λ = 1:
@@ -108,7 +109,10 @@ The red ellipse represents the cost function of the model, whereas the square (l
 
 - `It reduces the coefficients but does not allow them to reach zero`
 
-# Fitting model using Random Forest
+<!-- #endregion -->
+
+<!-- #region -->
+# Random Forest Regressor
 - Split dataset into train and test set in order to prediction w.r.t X_test
 - If needed do scaling of data
 - Scaling is not done in Random forest As its an ensemble method made of different decision trees
@@ -138,14 +142,11 @@ https://docs.google.com/document/d/e/2PACX-1vTqeS0WmZDMvxuN8auSIvAVncNg7zSR73Ibz
 
 ```
 
-# Notebook :
-
-
-
-### Workflow.
+### Notebook Workflow.
 + Data Prep
 + EDA
-+ Feature Selection
++ Feature Engineering
++ Regularization
 + Build Model
 + Interpret Model
 + Hyperparameter optimization
